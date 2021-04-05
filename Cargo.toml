@@ -37,6 +37,11 @@ all-languages = [
 bitcoin = "0.26.0"
 bip39 = { version = "1.0.1", optional = true }
 
+[[bin]]
+name = "rust-bip85-cli"
+path = "src/main.rs"
+required-features = ["mnemonic"]
+
 [[example]]
 name = "mnemonic"
 required-features = ["japanese"]
